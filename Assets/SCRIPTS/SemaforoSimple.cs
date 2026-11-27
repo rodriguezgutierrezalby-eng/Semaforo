@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SemaforEnum : MonoBehaviour
+public class SemaforoSimple : MonoBehaviour
 {
     [SerializeField]
     GameObject redLight;
@@ -46,7 +46,7 @@ public class SemaforEnum : MonoBehaviour
             EncenderLuces(false, true, false);
             contador = 0.0f;
         }
-        //PASA A ROJO
+        //PASAR A ROJO
         if (contador >= 27 && orangeLight.activeSelf == true)
         {
             EncenderLuces(false, false, true);
